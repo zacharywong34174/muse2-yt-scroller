@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "muse2-yt-scroller"
+version = "0.1.0"
+description = "An experimental Muse 2 blink-to-scroll interface with a device-free demo"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = "MIT"
+authors = [{name = "Zachary Wong"}]
+dependencies = [
+  "numpy>=1.26,<3", "pandas>=2.2,<3", "scipy>=1.12,<2",
+  "scikit-learn>=1.5,<2", "antropy>=0.1.6,<0.3", "joblib>=1.4,<2",
+]
+
+[project.optional-dependencies]
+live = ["pylsl>=1.17,<2", "PyAutoGUI>=0.9.54,<1"]
+test = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+include = ["muse2_scroller*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

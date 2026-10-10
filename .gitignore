@@ -1,0 +1,49 @@
+# Private recordings, labels, fitted models, and local outputs
+data/
+models/
+recordings/
+demo-output/
+*.csv
+*.tsv
+*.edf
+*.bdf
+*.xdf
+*.npy
+*.npz
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+# Credentials and machine-specific configuration
+.env
+.env.*
+*.pem
+*.key
+credentials*
+# Generated media and archives (add reviewed assets explicitly if ever needed)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.zip
+*.tar*
+# Python/editor/build output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.DS_Store
+.idea/
+.vscode/

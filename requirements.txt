@@ -1,0 +1,2 @@
+# Core installation; optional hardware support: python -m pip install -e ".[live]"
+-e .
